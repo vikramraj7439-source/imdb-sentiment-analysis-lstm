@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load Model & Tokenizer
 
-model = load_model("sentiment_model.h5")
+model = load_model("sentiment_model.keras")
 with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
