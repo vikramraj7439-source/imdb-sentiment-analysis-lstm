@@ -1,14 +1,10 @@
 import numpy as np
 import streamlit as st
 import pickle
-
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-
-
 # Load Model & Tokenizer
-
 
 model = load_model("sentiment_model.h5")
 with open("tokenizer.pkl", "rb") as f:
